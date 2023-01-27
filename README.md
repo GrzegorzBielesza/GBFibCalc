@@ -104,6 +104,7 @@ Gbmultifib-env --output json' należało utworzyć usera z odpowiednimi uprawnie
 ![obraz](https://user-images.githubusercontent.com/92359764/215215861-3c5b78b1-656c-4a54-9924-7e87f5349c44.png)
 ![obraz](https://user-images.githubusercontent.com/92359764/215215878-25f4adc1-5f4a-4665-add0-b0740a605eae.png)
 
-A oto efekt użycia polecenia:
+Polecenie zostało wykonane z poziomu zainstalowanego lokalnie AWS CLI. A oto efekt użycia polecenia:
 
-![obraz](https://user-images.githubusercontent.com/92359764/215215963-925c0641-b034-4c2b-b9c4-2af39de1bb79.png)
+![obraz](https://user-images.githubusercontent.com/92359764/215221627-394a0b38-35f2-44b9-9c34-48ff8a24f9d8.png)
+
