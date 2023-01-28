@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import './Fib.css';
 
 class Fib extends Component {
   state = {
@@ -56,19 +57,20 @@ class Fib extends Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <label>Enter your index:</label>
-          <input
+		                
+          <input class='input-field' placeholder='Enter your index'
             value={this.state.index}
             onChange={(event) => this.setState({ index: event.target.value })}
           />
-          <button>Submit</button>
-        </form>
-
+          
         <h3>Indexes I have seen:</h3>
         {this.renderSeenIndexes()}
 
         <h3>Calculated Values:</h3>
         {this.renderValues()}
+          <button type='submit' class='submit-btn'>Calculate</button>
+        </form>
+
       </div>
     );
   }

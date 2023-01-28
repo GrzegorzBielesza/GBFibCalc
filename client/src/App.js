@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header className="App-header">
+        {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <a
             className="App-link"
@@ -25,6 +25,33 @@ function App() {
         <div>
           <Route exact path="/" component={Fib} />
           <Route path="/otherpage" component={OtherPage} />
+        </div> */}
+
+        <div class="full-page">
+          <div class="navbar">
+            <div>
+              <h1>GBMultiFIb</h1>
+            </div>
+            <nav>
+              <ul id='MenuItems'>
+                  <li><a href='https://github.com/GrzegorzBielesza/GBFibCalc'>Github</a></li>
+                  <li><a href='https://hub.docker.com/repository/docker/gbielesza/lab'>Dockerhub</a></li>
+              </ul>
+            </nav>
+          </div>
+
+            <div class="form-box">
+              <div class='button-box'>
+                    <Link to="/"><button type='button' class='btn-left'>Fibonacci</button></Link>
+                    <Link to="/otherpage"><button type='button' class='btn-right'>Author</button></Link>
+              </div>
+              <form id='login' class='input-group-login'>
+                  <div class='input-group-login'>
+                  <Route exact path="/" component={Fib} />
+                    <Route path="/otherpage" component={OtherPage} />
+              </div>
+              </form>
+            </div>
         </div>
       </div>
     </Router>
